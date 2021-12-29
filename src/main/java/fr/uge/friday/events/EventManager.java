@@ -11,7 +11,7 @@ public class EventManager {
 
   public HashMap<String, Event> events = new HashMap<>();
 
-  private record Schedule(DateFormat start, DateFormat end) {
+  public record Schedule(DateFormat start, DateFormat end) {
     public Schedule {
       requireNonNull(start);
       requireNonNull(end);
